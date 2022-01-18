@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid </title>
+    <style>
+        .container{
+            display:grid;
+            /* grid-template-columns: 100px 100px ; */
+            /* grid-template-columns: 200px auto ; */
+            grid-template-columns: 1fr 4fr;
+            grid-template-columns: repeat(10 , auto);
+            grid-gap: 2rem;
+        }
+        .item{
+            /* height:150px;
+            width:150px; */
+            background-color: burlywood;
+            padding:  15px 23px;
+            margin: 23px;
+            border:3px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+        <div class="item">item-4</div>
+    </div>
+</body>
+</html>

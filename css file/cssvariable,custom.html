@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+    <style>
+        :root{
+            --box-color: violet;
+
+        }
+       .container{
+           display: flex;
+           background-color:var(--box-color);
+       }
+       .box{
+           height: 230px;
+           width: 230px;
+           margin: 122px 222px;
+           border: 10px solid rgb(34, 4, 4);
+           /* background-color: aqua; */
+           background-color: var(--box-color);
+           text-align: center;
+           justify-content: center;
+           box-shadow: 5px 5px 5px 6px grey;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+</body>
+</html>
